@@ -4,7 +4,8 @@ const Homes=()=>{
 return(
 <>
 <NavLink to='/StateChange'>State change App</NavLink><br /><br />
-<NavLink to='/ObjectChange'>ObjectChange change App</NavLink>
+<NavLink to='/ObjectChange'>ObjectChange change App</NavLink><br /><br />
+<NavLink to='/ObjectForm'>FormValidation with Reducer</NavLink>
 
 </>    
 )

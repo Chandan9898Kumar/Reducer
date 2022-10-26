@@ -12,8 +12,11 @@ const reducer = (state = initial_State, action) => {
     if (action.type === "add") {
         return state + 1
     }
-    else {
+    else if(action.type==='sub') {
         return state - 1
+    }
+    else{
+        return state- state
     }
 }
 
@@ -31,10 +34,13 @@ const StateChanges = () => {
                 onClick={() => dispatch({ type: 'add' })}
             >Add</button>
             <br /><br />
-
             <button
                 onClick={() => dispatch({ type: 'sub' })}
             >Subtract</button>
+            <br /><br />
+            <button
+                onClick={() => dispatch({ type: 'reset' })}
+            >Reset</button>
         </>
     )
 }

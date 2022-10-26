@@ -22,6 +22,15 @@ const initialState = [
     },
 ];
 
+
+// the action is an object with one required property and one optional property:
+
+//  1.    type : is the required property (analogous to the API endpoint). 
+// It tells the reducer what piece of logic it should be using to modify the state.
+
+//  2.   payload : is the optional property (analogous to the body of the HTTP POST request, if any). 
+// It provides additional information to the reducer on how to modify the state.
+
 const reducer = (state, action) => {
     if (action.type === 'complete') {
         return state.map((items) => {
@@ -36,6 +45,8 @@ const reducer = (state, action) => {
 }
 
 //     with switch case 
+
+// Reducers are usually structured with a switch statement on the action type, for example:
 
 // const reducer = (state, action) => {
 //     switch (action.type) {
