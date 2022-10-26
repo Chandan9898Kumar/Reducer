@@ -22,3 +22,7 @@ The useReducer Hook is similar to the useState Hook.
  If you find yourself keeping track of multiple pieces of state that rely on complex logic,
  useReducer may be useful.
 `The useReducer Hook returns the current stateand a dispatchmethod.`
+
+
+
+`One good use case for useReducer is when you have multiple pieces of state that rely on each other.`

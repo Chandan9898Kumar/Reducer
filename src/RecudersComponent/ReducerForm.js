@@ -8,6 +8,9 @@ const initialValue = {
 // A common useReducer usage is to handle forms.
 // Here's an example with two input fields, but you could imagine the same with many more fields.
 const reducer = (state, action) => {
+    //              Note  
+    //  we can simply destruct action   like  this
+    //  (state, {type,payload}) and directly use type and payload instead of typing action.type
 
     // switch (action.type) {
 
@@ -67,6 +70,10 @@ const FormValidationWithReducer = () => {
     return (
         <>
             <div>
+            UserNames: {state.username}<br />
+            Email: {state.email}<br />
+            password: {state.password}<br />
+
                 <form>
                     userName : <input
                         placeholder="type Name"
